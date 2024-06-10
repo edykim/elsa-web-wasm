@@ -24,7 +24,29 @@ monaco.editor.defineTheme('elsa-default', {
     colors: {}
     });
 
-monaco.editor.setTheme('elsa-default');
+monaco.editor.defineTheme('elsa-default-dark', {
+    base: 'vs-dark',
+    inherit: true,
+    rules: [
+      {
+        token: "operator",
+        foreground: "#97ba6b"
+      },
+      {
+        token: "brackets",
+        foreground: "#d49265"
+      },
+      {
+        token: "constructor",
+        foreground: "#ed6de4",
+      }
+    ],
+    colors: {}
+    });
+
+window.matchMedia("(prefers-color-scheme: dark").matches
+    ? monaco.editor.setTheme('elsa-default-dark')
+    : monaco.editor.setTheme('elsa-default');
 
 window.editor = monaco.editor.create(document.querySelector('.editor'), {
     language: 'elsa',

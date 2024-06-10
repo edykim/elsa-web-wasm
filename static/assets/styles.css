@@ -72,6 +72,7 @@ header .tagline {
     white-space: pre;
     padding: 0.6rem 1rem;
     overflow: scroll;
+    font-size: 0.8rem;
 }
 
 .title {
@@ -88,3 +89,21 @@ header .tagline {
                              ".      .      .      .";
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #171616;
+        color: #ddd;
+    }
+    header {
+        background: #14263a;
+    }
+    .editor, .checker {
+        border: 1px solid #222;
+    }
+    select {
+        color: #ddd;
+        background: inherit;
+    }
+}
+
