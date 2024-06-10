@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>ELSA wasm</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vscode-codicons@0.0.17/dist/codicon.min.css" rel="stylesheet">
+<link href="./assets/styles.css" rel="stylesheet">
+
+<script crossorigin="anonymous" src="https://unpkg.com/@wasmer/sdk@0.6.0"></script>
+<script src="./scripts/def.js"></script>
+<script src="./examples/index.js"></script>
+<script src="./scripts/monaco.js" type="module"></script>
+<script src="./scripts/main.js"></script>
+</head>
+<body>
+<div class="app">
+    <header>
+        <h1>ELSA.wasm</h1>
+        <span class="tagline">An Interactive Lambda Calculus Evaluator</span>
+    </header>
+    <div class="container container-left">
+        <div class="title">
+            Editor
+            <select id="demo-select">
+                <option value="">Example</option>
+            </select>
+        </div>
+        <div class="editor"></div>
+    </div>
+    <div class="container container-right">
+        <div class="title">
+            Evaluation
+        </div>
+        <div class="checker"></div>
+    </div>
+</div>
+</body>
+</html>
+

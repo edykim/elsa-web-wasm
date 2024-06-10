@@ -1,0 +1,16 @@
+{
+  "name": "elsa-web",
+  "version": "0.0.1",
+  "description": "An Interactive Lambda Calculus Evaluator, but with wasm",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npm run build && npx serve -c ../serve.json public"
+  },
+  "author": "Edward Kim <edward@edykim.com>",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "mkdirp": "^3.0.1",
+    "serve": "^14.2.3"
+  }
+}
