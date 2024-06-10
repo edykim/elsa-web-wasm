@@ -24,12 +24,24 @@ header {
     background-color: #003f86;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+
+.site-title {
+    display: flex;
+    align-items: center;
+}
+
 header h1 {
     margin: 0;
     padding: 0;
     font-size: 1.3rem;
     color: #fff;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
 }
 
 header .tagline {
