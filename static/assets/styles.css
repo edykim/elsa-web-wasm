@@ -88,15 +88,15 @@ header .tagline {
                              ".      side   side   ."
                              ".      .      .      .";
     }
+    .tagline {
+        display: none;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     html, body {
         background-color: #171616;
         color: #ddd;
-    }
-    .tagline {
-        display: none;
     }
     header {
         background: #14263a;
